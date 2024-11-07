@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tarjetas de Genshin Impact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body {
+      background-image: url('img/fondo.jpeg');
+      background-size: cover;
+      background-attachment: fixed;
+      font-family: 'Poppins', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      flex-wrap: wrap; /* Permite que varias tarjetas se muestren en filas */
+    }
+
+    .card.genshin-theme {
+      background-color: rgba(255, 255, 255, 0.9);
+      border: 2px solid #d4af37;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      padding: 10px;
+      max-width: 200px;
+      text-align: center;
+      margin: 10px; /* Espaciado entre las tarjetas */
+      transition: transform 0.3s;
+    }
+
+    .card.genshin-theme:hover {
+      transform: scale(1.05);
+    }
+
+    .character-image {
+      width: 100%;
+      border-radius: 10px;
+      margin-bottom: 10px;
+    }
+
+    .name {
+      color: #c78640;
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+
+    .secret-message {
+      opacity: 0;
+      color: #6c757d;
+      transition: opacity 0.4s;
+    }
+
+    .card:hover .secret-message {
+      opacity: 1;
+    }
+
+    .skills i {
+      font-size: 24px;
+      color: #008cff;
+      margin: 8px;
+      transition: transform 0.3s;
+    }
+
+    .skills i:hover {
+      transform: scale(1.2);
+    }
+
+    .contact {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Tarjeta de Lumine -->
+  <div class="card genshin-theme">
+    <div class="header">
+      <h2 class="name">Lumine</h2>
+      <p class="secret-message">"El destino se entrelaza más allá del tiempo."</p>
+    </div>
+    <img src="img/lumine.png" alt="Imagen de Lumine" class="character-image">
+    <div class="description">
+      <p>Viajera de otro mundo en busca de respuestas y aventuras en Teyvat.</p>
+    </div>
+  </div>
+
+  <!-- Tarjeta de Encuentros -->
+  <div class="card genshin-theme">
+    <div class="header">
+      <h2 class="name">Encuentros</h2>
+      <p class="secret-message">"El tiempo gira."</p>
+    </div>
+    <img src="img/todos.webp" alt="Imagen de Encuentros" class="character-image">
+    <div class="description">
+      <p>Reunión del tiempo.</p>
+    </div>
+  </div>
+
+  <!-- Tarjeta de Klee -->
+  <div class="card genshin-theme">
+    <div class="header">
+      <h2 class="name">Klee</h2>
+      <p class="secret-message">"Los juegos son divertidos con Diluc."</p>
+    </div>
+    <img src="img/klee.png" alt="Imagen de Klee" class="character-image">
+    <div class="description">
+      <p>¿Qué mejor regalo que una bomba?</p>
+    </div>
+  </div>
+
+  <!-- Tarjeta de Fuego -->
+  <div class="card genshin-theme">
+    <div class="header">
+      <h2 class="name">Fuego</h2>
+      <p class="secret-message">"Que arda Troya."</p>
+    </div>
+    <img src="img/fuego.jpg" alt="Imagen de Fuego" class="character-image">
+    <div class="description">
+      <p>El desierto es un lugar cómodo.</p>
+    </div>
+  </div>
+</body>
+</html>
